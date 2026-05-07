@@ -1,0 +1,67 @@
+
+
+- type: entity
+  parent: BaseStructureDynamic
+  id: StickyBin
+  name: sticky bin
+  description: What secrets lie at the bottom of its endless stack?
+  suffix: Empty
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/bureaucracy.rsi
+    state: paper_bin0
+    drawdepth: SmallObjects
+    noRot: true
+  - type: Appearance
+  - type: ItemMapper
+    sprite: Objects/Misc/bureaucracy.rsi
+    mapLayers:
+      paper_bin1:
+        whitelist:
+          tags:
+          - Document
+          - Write
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.10,-0.10,0.10,0.10"
+        density: 500
+        mask:
+        - TabletopMachineMask
+  - type: InteractionOutline
+  - type: Bin
+    whitelist:
+      tags:
+      - Document
+      - Write
+  - type: ContainerContainer
+    containers:
+      bin-container: !type:Container
+
+
+- type: entity
+  name: Sticky Note
+  parent: BasePaper
+  id: Sticky
+  description: 'A Sticky piece of paper'
+  components:
+  - type: Sprite
+    sprite: Resources/Textures/_Funkystation/Objects/StickyNotes
+    layers:
+    - state: sticky_face
+    - state: sticky_note_words
+      map: ["sticky_note"]
+      visible: false
+  - type: Paper
+  - type: PaperLabelType
+  - type: ActivatableUI
+    key: enum.PaperUiKey.Key
+    requiresComplex: false
+  - type: UserInterface
+    interfaces:
+      enum.PaperUiKey.Key:
+        type: PaperBoundUserInterface
+  - type: FaxableObject
+  - type: PaperVisuals
