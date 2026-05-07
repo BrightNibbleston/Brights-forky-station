@@ -166,7 +166,7 @@
   id: AdvancedAtmospherics
   name: research-technology-advanced-atmospherics
   icon:
-    sprite: Objects/Devices/Holoprojectors/atmos.rsi
+    sprite: Structures/Piping/Atmospherics/Portable/portable_scrubber.rsi
     state: icon
   discipline: Industrial
   tier: 2
@@ -174,7 +174,6 @@
   recipeUnlocks:
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
-  - HolofanProjector
   - ElectrolyzerMachineCircuitboard # Funky atmos = /tg/ gases
   technologyPrerequisites:
   - AtmosphericTech
@@ -241,3 +240,17 @@
   - PowerCellHyper
   technologyPrerequisites:
   - AdvancedPowercells
+
+- type: technology
+  id: HoloFanResearch
+  name: research-technology-HoloFanResearch
+  icon:
+    sprite: Objects/Devices/Holoprojectors/atmos.rsi
+    state: icon
+  discipline: Industrial
+  tier: 3
+  cost: 5000
+  recipeUnlocks:
+  - HolofanProjector
+  technologyPrerequisites:
+  - AdvancedAtmospherics

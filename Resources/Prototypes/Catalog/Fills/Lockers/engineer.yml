@@ -186,7 +186,6 @@
     - id: ClothingHeadHelmetAtmosFire
     - id: GasAnalyzer
     - id: MedkitOxygenFilled
-    - id: HolofanProjector
     - id: RPD
     - id: RCDAmmo
     - id: AirGrenade
@@ -298,7 +297,6 @@
   table: !type:AllSelector
     children:
     - id: BoxInflatable
-    - id: HolofanProjector
     - id: MetalFoamGrenade
       amount: 3
     - id: AirGrenade
