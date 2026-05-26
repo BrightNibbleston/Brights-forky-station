@@ -241,16 +241,3 @@
   technologyPrerequisites:
   - AdvancedPowercells
 
-- type: technology
-  id: HoloFanResearch
-  name: research-technology-HoloFanResearch
-  icon:
-    sprite: Objects/Devices/Holoprojectors/atmos.rsi
-    state: icon
-  discipline: Industrial
-  tier: 3
-  cost: 5000
-  recipeUnlocks:
-  - HolofanProjector
-  technologyPrerequisites:
-  - AdvancedAtmospherics

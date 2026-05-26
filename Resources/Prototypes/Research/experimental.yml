@@ -148,6 +148,18 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
+    -
+- type: technology
+  id: HoloFanResearch
+  name: research-technology-HoloFanResearch
+  icon:
+    sprite: Objects/Devices/Holoprojectors/atmos.rsi
+    state: icon
+  discipline: Experimental
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+  - HolofanProjector
 
 # Tier 3
 
