@@ -148,7 +148,7 @@
   recipeUnlocks:
     - WeaponForceGun
     - WeaponTetherGun
-    -
+
 - type: technology
   id: HoloFanResearch
   name: research-technology-HoloFanResearch
