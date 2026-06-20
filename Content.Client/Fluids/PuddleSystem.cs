@@ -55,6 +55,7 @@ public sealed class PuddleSystem : SharedPuddleSystem
             }
         }
 
+
         var baseColor = Color.White;
 
         if (args.AppearanceData.TryGetValue(PuddleVisuals.SolutionColor, out var colorObj))

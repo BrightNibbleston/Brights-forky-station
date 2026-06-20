@@ -51,6 +51,8 @@ public abstract partial class SharedPuddleSystem : EntitySystem
 
     public const float MediumThreshold = 0.6f;
 
+    public const float HighThreshold = 0.8f;
+
     // Using local deletion queue instead of the standard queue so that we can easily "undelete" if a puddle
     // loses & then gains reagents in a single tick.
     private HashSet<EntityUid> _deletionQueue = [];
