@@ -2,6 +2,7 @@ using Content.Shared.Chemistry.Components;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
+using Content.Shared.Atmos;
 
 namespace Content.Shared.Fluids.Components
 {
@@ -27,5 +28,11 @@ namespace Content.Shared.Fluids.Components
 
         [ViewVariables]
         public Entity<SolutionComponent>? Solution;
+
+        // causes breathing to stop if there's over an amount of liqued
+
+        [DataField]
+        public FixedPoint2 DrownU = FixedPoint2.New(100);
+
     }
 }

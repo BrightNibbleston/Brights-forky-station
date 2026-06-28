@@ -171,6 +171,23 @@ public abstract partial class SharedPuddleSystem : EntitySystem
         }
     }
 
+    private void Drowning(Entity<PuddleComponent> entity)
+    {
+        var volume = FixedPoint2.Zero;
+        var (uid, puddle) = entity;
+        if (!Resolve(entity, ref puddle))
+            return;
+
+        if (volume <= puddle.DrownU)
+            return;
+
+        var transformComp = Transform(uid);
+        var coords = transformComp.Coordinates;
+
+        transformComp.
+    }
+
+
     private void OnAnchorChanged(Entity<PuddleComponent> entity, ref AnchorStateChangedEvent args)
     {
         if (!args.Anchored)
