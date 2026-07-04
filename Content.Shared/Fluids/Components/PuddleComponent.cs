@@ -29,8 +29,7 @@ namespace Content.Shared.Fluids.Components
         [ViewVariables]
         public Entity<SolutionComponent>? Solution;
 
-        // causes breathing to stop if there's over an amount of liqued
-
+        // amount before someone can drown in a puddle
         [DataField]
         public FixedPoint2 DrownU = FixedPoint2.New(100);
 

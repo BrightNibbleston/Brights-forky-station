@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Threading;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
@@ -23,6 +24,9 @@ using Robust.Shared.Containers;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
+using Content.Shared.Body.Components;
+using Robust.Shared.Physics.Events;
+using Content.Shared.Body.Components;
 
 namespace Content.Shared.Fluids;
 
@@ -41,6 +45,7 @@ public abstract partial class SharedPuddleSystem : EntitySystem
     [Dependency] private readonly SpeedModifierContactsSystem _speedModContacts = default!;
     [Dependency] private readonly StepTriggerSystem _stepTrigger = default!;
     [Dependency] private readonly TileFrictionController _tile = default!;
+    [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
 
     private ProtoId<ReagentPrototype>[] _standoutReagents = [];
 
@@ -50,8 +55,6 @@ public abstract partial class SharedPuddleSystem : EntitySystem
     public const float LowThreshold = 0.3f;
 
     public const float MediumThreshold = 0.6f;
-
-    public const float HighThreshold = 0.8f;
 
     // Using local deletion queue instead of the standard queue so that we can easily "undelete" if a puddle
     // loses & then gains reagents in a single tick.
@@ -70,6 +73,7 @@ public abstract partial class SharedPuddleSystem : EntitySystem
         SubscribeLocalEvent<PuddleComponent, GetFootstepSoundEvent>(OnGetFootstepSound);
         SubscribeLocalEvent<PuddleComponent, ExaminedEvent>(HandlePuddleExamined);
         SubscribeLocalEvent<PuddleComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
+        SubscribeLocalEvent<PuddleComponent, StartCollideEvent>(DrowningStart);
 
         SubscribeLocalEvent<EvaporationComponent, MapInitEvent>(OnEvaporationMapInit);
 
@@ -171,20 +175,48 @@ public abstract partial class SharedPuddleSystem : EntitySystem
         }
     }
 
-    private void Drowning(Entity<PuddleComponent> entity)
+    private void DrowningStart(Entity<PuddleComponent> entity, ref StartCollideEvent arg)
     {
         var volume = FixedPoint2.Zero;
         var (uid, puddle) = entity;
-        if (!Resolve(entity, ref puddle))
+        if (volume < puddle.DrownU)
             return;
 
+        var ent = arg.OtherEntity;
+        AddComp<NotBreathingComponent>(ent);
+    }
+
+    private void DrowningEnd(Entity<PuddleComponent> entity, ref EndCollideEvent arg)
+    {
+        var ent = arg.OtherEntity;
+        RemComp<NotBreathingComponent>(ent);
+    }
+
+    private void Drowning(Entity<PuddleComponent> entity, ref StepTriggerComponent ar)
+    {
+        var volume = FixedPoint2.Zero;
+        var (uid, puddle) = entity;
         if (volume <= puddle.DrownU)
             return;
 
-        var transformComp = Transform(uid);
-        var coords = transformComp.Coordinates;
+        if (!Resolve(entity, ref puddle))
+            return;
 
-        transformComp.
+        var Xform = Transform(uid);
+        var nearbyEntities = _entityLookup.GetEntitiesInRange(Xform.Coordinates, 1f);
+
+        foreach (var ent in nearbyEntities)
+            EnsureComp<NotBreathingComponent>(ent);
+
+     //   var nearbyEntities2 = _entityLookup.GetEntitiesInRange(Xform.Coordinates, 0.5f);
+// not finished, uncomment after testing
+       // Thread.Sleep(100);
+        //nearbyEntities.ExceptWith(nearbyEntities2);
+
+
+        // not finished, uncomment after testing
+       // foreach (var ent in nearbyEntities)
+       //     RemComp<NotBreathingComponent>(ent);
     }
 
 

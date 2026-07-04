@@ -105,6 +105,8 @@ public sealed class RespiratorSystem : EntitySystem
                 }
             }
 
+
+
             if (respirator.Saturation < respirator.SuffocationThreshold)
             {
                 if (_gameTiming.CurTime >= respirator.LastGaspEmoteTime + respirator.GaspEmoteCooldown)
@@ -130,6 +132,11 @@ public sealed class RespiratorSystem : EntitySystem
     {
         if (!Resolve(entity, ref entity.Comp, logMissing: false))
             return;
+
+        if (HasComp<NotBreathingComponent>(entity))
+        {
+            return;
+        }
 
         // Inhale gas
         var ev = new InhaleLocationEvent
