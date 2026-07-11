@@ -209,6 +209,7 @@ public abstract partial class SharedPuddleSystem : EntitySystem
         var (uid, puddle) = entity;
         if (!_solutionContainerSystem.ResolveSolution(uid, puddle.SolutionName, ref puddle.Solution, out var solution))
             return;
+
         if (solution.Volume < puddle.DrownU)
             return;
 
