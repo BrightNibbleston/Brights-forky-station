@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Threading;
 using Content.Shared.Administration.Logs;
+using Content.Shared.Atmos.Components;
 using Content.Shared.Chemistry;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.EntitySystems;
@@ -26,7 +27,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Content.Shared.Body.Components;
 using Robust.Shared.Physics.Events;
-using Content.Shared.Body.Components;
+using Content.Shared.Clothing;
 
 namespace Content.Shared.Fluids;
 
@@ -74,6 +75,8 @@ public abstract partial class SharedPuddleSystem : EntitySystem
         SubscribeLocalEvent<PuddleComponent, ExaminedEvent>(HandlePuddleExamined);
         SubscribeLocalEvent<PuddleComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
         SubscribeLocalEvent<PuddleComponent, StartCollideEvent>(DrowningStart);
+        SubscribeLocalEvent<PuddleComponent, EndCollideEvent>(DrowningEnd);
+        SubscribeLocalEvent<PuddleComponent, ItemMaskToggledEvent>(DrowningInternalsCheck);
 
         SubscribeLocalEvent<EvaporationComponent, MapInitEvent>(OnEvaporationMapInit);
 
@@ -175,50 +178,47 @@ public abstract partial class SharedPuddleSystem : EntitySystem
         }
     }
 
+    // Todo more water levels (if flooded and can drown people, hide stuff inside tile)
+
+    private void DrowningInternalsCheck(Entity<PuddleComponent> entity, ref ItemMaskToggledEvent arg)
+    {
+        var uid = entity;
+        var nearbyEntities = _entityLookup.GetEntitiesInRange<NotBreathingComponent>(Transform(uid).Coordinates, 1f);
+
+        foreach (var ent in nearbyEntities)
+        {
+            if (HasComp<BreathToolComponent>(ent))
+            {
+                RemComp<NotBreathingComponent>(ent);
+            }
+            else if (!HasComp<BreathToolComponent>(ent))
+            {
+                AddComp<NotBreathingComponent>(ent);
+            }
+        }
+    }
+
     private void DrowningStart(Entity<PuddleComponent> entity, ref StartCollideEvent arg)
     {
-        var volume = FixedPoint2.Zero;
+        if (HasComp<BreathToolComponent>(arg.OtherEntity))
+        {
+            RemComp<NotBreathingComponent>(arg.OtherEntity);
+            return;
+        }
+
         var (uid, puddle) = entity;
-        if (volume < puddle.DrownU)
+        if (!_solutionContainerSystem.ResolveSolution(uid, puddle.SolutionName, ref puddle.Solution, out var solution))
+            return;
+        if (solution.Volume < puddle.DrownU)
             return;
 
-        var ent = arg.OtherEntity;
-        AddComp<NotBreathingComponent>(ent);
+        EnsureComp<NotBreathingComponent>(arg.OtherEntity);
     }
 
     private void DrowningEnd(Entity<PuddleComponent> entity, ref EndCollideEvent arg)
     {
-        var ent = arg.OtherEntity;
-        RemComp<NotBreathingComponent>(ent);
+        RemComp<NotBreathingComponent>(arg.OtherEntity);
     }
-
-    private void Drowning(Entity<PuddleComponent> entity, ref StepTriggerComponent ar)
-    {
-        var volume = FixedPoint2.Zero;
-        var (uid, puddle) = entity;
-        if (volume <= puddle.DrownU)
-            return;
-
-        if (!Resolve(entity, ref puddle))
-            return;
-
-        var Xform = Transform(uid);
-        var nearbyEntities = _entityLookup.GetEntitiesInRange(Xform.Coordinates, 1f);
-
-        foreach (var ent in nearbyEntities)
-            EnsureComp<NotBreathingComponent>(ent);
-
-     //   var nearbyEntities2 = _entityLookup.GetEntitiesInRange(Xform.Coordinates, 0.5f);
-// not finished, uncomment after testing
-       // Thread.Sleep(100);
-        //nearbyEntities.ExceptWith(nearbyEntities2);
-
-
-        // not finished, uncomment after testing
-       // foreach (var ent in nearbyEntities)
-       //     RemComp<NotBreathingComponent>(ent);
-    }
-
 
     private void OnAnchorChanged(Entity<PuddleComponent> entity, ref AnchorStateChangedEvent args)
     {
