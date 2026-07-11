@@ -134,9 +134,7 @@ public sealed class RespiratorSystem : EntitySystem
             return;
 
         if (HasComp<NotBreathingComponent>(entity))
-        {
             return;
-        }
 
         // Inhale gas
         var ev = new InhaleLocationEvent
