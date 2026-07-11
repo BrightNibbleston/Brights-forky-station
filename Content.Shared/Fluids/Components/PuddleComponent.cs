@@ -29,7 +29,7 @@ namespace Content.Shared.Fluids.Components
         [ViewVariables]
         public Entity<SolutionComponent>? Solution;
 
-        // amount before someone can drown in a puddle
+        // amount before someone can drown in a puddle, for some reason the U required to is double this amount.
         [DataField]
         public FixedPoint2 DrownU = FixedPoint2.New(100);
 
