@@ -33,5 +33,10 @@ namespace Content.Shared.Fluids.Components
         [DataField]
         public FixedPoint2 DrownU = FixedPoint2.New(100);
 
+        [DataField]
+        public bool AffectsMovement = true;
+
+        [DataField]
+        public bool AffectsSound = true;
     }
 }
