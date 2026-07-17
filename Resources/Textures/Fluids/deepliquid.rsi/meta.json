@@ -1,0 +1,59 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-NC-SA-4.0",
+    "copyright": "Made by Dogman20801 (Discord)",
+    "states": [
+	{
+            "name": "deepliquid0"
+	},
+        {
+            "name": "deepliquid1"
+        },
+        {
+            "name": "deepliquid2"
+        },
+        {
+            "name": "deepliquid3"
+        },
+        {
+            "name": "deepliquid4"
+        },
+        {
+            "name": "deepliquid5"
+        },
+        {
+            "name": "deepliquid6"
+        },
+        {
+            "name": "deepliquid7"
+        },
+        {
+            "name": "deepliquid8"
+        },
+        {
+            "name": "deepliquid9"
+        },
+        {
+            "name": "deepliquid10"
+        },
+        {
+            "name": "deepliquid11"
+        },
+        {
+            "name": "deepliquid12"
+        },
+        {
+            "name": "deepliquid13"
+        },
+        {
+            "name": "deepliquid14"
+        },
+        {
+            "name": "deepliquid15"
+        }
+    ]
+}
