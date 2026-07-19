@@ -1,0 +1,42 @@
+<Document>
+  # Section A: Structure Code
+
+     ## 1. Walls
+  \t a. Walls must surround the entirety of the room, excluding entry and exit points
+
+  \t b. The outermost wall of the station must be reinforced
+
+  \t c. If it is for vital infrastructure, reinforced walls must be used
+
+  \t d. If it is for a high-security area, reinforced walls must be used
+
+  \t e. Walls must be non-reinforced if unnecessary
+
+     ## 2. Windows
+  \t a. Windows must either have flooring or a grille below them
+
+  \t b. Outermost windows must be reinforced and have grilles below
+
+  \t c. If it is for vital infrastructure, reinforced windows and grilles must be used
+
+  \t d. If it is for a high-security area reinforced windows and grilles must be used
+
+  \t e. If it is for non-public areas grilles must be used but not reinforced windows
+
+  \t f. Windows must be un-reinforced and without a grille if unnecessary
+
+     ## 3. Doors
+  \t a. Room must have a minimum of one entry and exit point
+
+  \t b. Doors must be fully functional and have no tampering
+
+  \t c. Entries and Exits must be easy to reach
+
+  \t d. Doors must be painted to represent the department they are within or provide entry into
+
+  \t e. Doors must be access locked to the department they reside in or provide entry into
+
+  \t f. Doors must be reinforced if they provide entry into a high-security area
+
+
+</Document>

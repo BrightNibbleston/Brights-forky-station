@@ -3,11 +3,20 @@
   name: guide-entry-engineering
   text: "/ServerInfo/Guidebook/Engineering/Engineering.xml"
   children:
+  - BuildingCode
   - Construction
   - Power
   - Atmospherics
   - ShuttleCraft
   - Networking
+
+- type: guideEntry
+  id: BuildingCode
+  name: guide-entry-buildcode
+  text: "/ServerInfo/Guidebook/Engineering/BuildCode.xml"
+  children:
+  - SecAStructCode
+  - SecBStructCode
 
 - type: guideEntry
   id: Construction
@@ -17,6 +26,16 @@
   - Airlocks
   - ExpandingRepairingStation
   - WirePanels
+
+- type: guideEntry
+  id: SecAStructCode
+  name: guide-entry-secastructcode
+  text: "/ServerInfo/Guidebook/Engineering/SecAStructCode.xml"
+
+- type: guideEntry
+  id: SecAStructCode
+  name: guide-entry-secastructcode
+  text: "/ServerInfo/Guidebook/Engineering/SecBStructCode.xml"
 
 - type: guideEntry
   id: ExpandingRepairingStation

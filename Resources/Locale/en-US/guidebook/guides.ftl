@@ -1,6 +1,9 @@
 guide-entry-ss14 = Station and Shifts
 guide-entry-engineering = Engineering
 guide-entry-construction = Construction
+guide-entry-buildcode = Build Code
+guide-entry-secastructcode = Section A Structure Code
+guide-entry-secbstructcode = Section B Structure Code
 guide-entry-expandingrepairingstation = Expanding and Repairing Stations
 guide-entry-airlock-security = Airlock Upgrades
 guide-entry-wirepanels = Wire Panels
