@@ -2,10 +2,10 @@
 # more desaturated colurs below
 
 - type: entity
-  name: Orange Paper
+  name: orange Paper
   parent: Paper
   id: PaperOrange
-  description: 'orange paper.'
+  description: 'A piece of orange paper.'
   components:
   - type: Sprite
     layers:
@@ -31,7 +31,7 @@
     contentImageModulate: "#FFB162"
 
 - type: entity
-  name: Orange Office Paper
+  name: orange office paper
   parent: Paper
   id: OfficePaperOrange
   description: 'A single unit of orange bureaucracy.'
@@ -65,10 +65,10 @@
 
 
 - type: entity
-  name: Yellow Paper
+  name: yellow Paper
   parent: Paper
   id: PaperYellow
-  description:  'yellow paper.'
+  description:  'A piece of yellow paper.'
   components:
   - type: Sprite
     layers:
@@ -95,7 +95,7 @@
 
 
 - type: entity
-  name: Yellow Office Paper
+  name: yellow office paper
   parent: Paper
   id: OfficePaperYellow
   description: 'A single unit of yellow bureaucracy.'
@@ -129,10 +129,10 @@
 
 
 - type: entity
-  name: Green Paper
+  name: green Paper
   parent: Paper
   id: PaperGreen
-  description:  'green paper.'
+  description:  'A piece of green paper.'
   components:
   - type: Sprite
     layers:
@@ -159,7 +159,7 @@
 
 
 - type: entity
-  name: Green Office Paper
+  name: green office paper
   parent: Paper
   id: OfficePaperGreen
   description: 'A single unit of green bureaucracy.'
@@ -193,10 +193,10 @@
 
 
 - type: entity
-  name: Red Paper
+  name: red Paper
   parent: Paper
   id: PaperRed
-  description:  'red paper.'
+  description:  'A piece of red paper.'
   components:
   - type: Sprite
     layers:
@@ -222,7 +222,7 @@
     contentImageModulate: "#D3494E"
 
 - type: entity
-  name: Red Office Paper
+  name: red office paper
   parent: Paper
   id: OfficePaperRed
   description: 'A single unit of red bureaucracy.'
@@ -256,10 +256,10 @@
 
 
 - type: entity
-  name: Purple Paper
+  name: purple Paper
   parent: Paper
   id: PaperPurple
-  description:  'purple paper.'
+  description:  'A piece of purple paper..'
   components:
   - type: Sprite
     layers:
@@ -285,7 +285,7 @@
     contentImageModulate: "#84597E"
 
 - type: entity
-  name: Purple Office Paper
+  name: purple office paper
   parent: Paper
   id: OfficePaperPurple
   description: 'A single unit of purple bureaucracy.'
@@ -319,10 +319,10 @@
 
 
 - type: entity
-  name: Blue Paper
+  name: plue Paper
   parent: Paper
   id: PaperBlue
-  description:  'blue paper.'
+  description:  'A piece of blue paper.'
   components:
   - type: Sprite
     layers:
@@ -348,7 +348,7 @@
     contentImageModulate: "#202040"
 
 - type: entity
-  name: Blue Office Paper
+  name: blue office paper
   parent: Paper
   id: OfficePaperBlue
   description: 'A single unit of blue bureaucracy.'
@@ -382,10 +382,10 @@
 
 
 - type: entity
-  name: Brown Paper
+  name: brown Paper
   parent: Paper
   id: PaperBrown
-  description:  'Brown paper.'
+  description:  'A piece of brown paper.'
   components:
   - type: Sprite
     layers:
@@ -411,7 +411,7 @@
     contentImageModulate: "#836953"
 
 - type: entity
-  name: Brown Office Paper
+  name: brown office paper
   parent: Paper
   id: OfficePaperBrown
   description: 'A single unit of brown bureaucracy.'
