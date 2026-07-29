@@ -1,20 +1,19 @@
 
-
-# saturated colours below
+# more desaturated colurs below
 
 - type: entity
   name: Orange Paper
   parent: Paper
   id: PaperOrange
-  description: 'Orange paper.'
+  description: orange paper.'
   components:
   - type: Sprite
     layers:
     - state: paper
-      color: "#FFA500"
+      color: "#FFB162"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#FFA500"
+      color: "#FFB162"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -28,8 +27,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#FFA500"
-    contentImageModulate: "#FFA500"
+    backgroundModulate: "#FFB162"
+    contentImageModulate: "#FFB162"
 
 - type: entity
   name: Orange Office Paper
@@ -40,10 +39,10 @@
   - type: Sprite
     layers:
     - state: paper
-      color: "#FFA500"
+      color: "#FFB162"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#FFA500"
+      color: "#FFB162"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -57,8 +56,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#FFA500"
-    contentImageModulate: "#FFA500"
+    backgroundModulate: "#FFB162"
+    contentImageModulate: "#FFB162"
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
     backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
@@ -69,15 +68,15 @@
   name: Yellow Paper
   parent: Paper
   id: PaperYellow
-  description: 'Yellow paper.'
+  description:  yellow paper.'
   components:
   - type: Sprite
     layers:
     - state: paper
-      color: "#F2C607"
+      color: "#FFF275"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#F2C607"
+      color: "#FFF275"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -91,8 +90,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#F2C607"
-    contentImageModulate: "#F2C607"
+    backgroundModulate: "#FFF275"
+    contentImageModulate: "#FFF275"
 
 
 - type: entity
@@ -104,10 +103,10 @@
   - type: Sprite
     layers:
     - state: paper
-      color: "#F2C607"
+      color: "#FFF275"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#F2C607"
+      color: "#FFF275"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -121,8 +120,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#F2C607"
-    contentImageModulate: "#F2C607"
+    backgroundModulate: "#FFF275"
+    contentImageModulate: "#FFF275"
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
     backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
@@ -133,15 +132,15 @@
   name: Green Paper
   parent: Paper
   id: PaperGreen
-  description: 'Green paper.'
+  description:  green paper.'
   components:
   - type: Sprite
     layers:
     - state: paper
-      color: "#008000"
+      color: "#7E8C54"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#008000"
+      color: "#7E8C54"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -155,8 +154,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#008000"
-    contentImageModulate: "#008000"
+    backgroundModulate: "#7E8C54"
+    contentImageModulate: "#7E8C54"
 
 
 - type: entity
@@ -168,10 +167,10 @@
   - type: Sprite
     layers:
     - state: paper
-      color: "#008000"
+      color: "#7E8C54"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#008000"
+      color: "#7E8C54"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -185,8 +184,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#008000"
-    contentImageModulate: "#008000"
+    backgroundModulate: "#7E8C54"
+    contentImageModulate: "#7E8C54"
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
     backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
@@ -197,15 +196,15 @@
   name: Red Paper
   parent: Paper
   id: PaperRed
-  description: 'Red paper.'
+  description:  red paper.'
   components:
   - type: Sprite
     layers:
     - state: paper
-      color: "#8B0000"
+      color: "#D3494E"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#8B0000"
+      color: "#D3494E"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -219,8 +218,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#8B0000"
-    contentImageModulate: "#8B0000"
+    backgroundModulate: "#D3494E"
+    contentImageModulate: "#D3494E"
 
 - type: entity
   name: Red Office Paper
@@ -231,10 +230,10 @@
   - type: Sprite
     layers:
     - state: paper
-      color: "#8B0000"
+      color: "#D3494E"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#8B0000"
+      color: "#D3494E"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -248,8 +247,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#8B0000"
-    contentImageModulate: "#8B0000"
+    backgroundModulate: "#D3494E"
+    contentImageModulate: "#D3494E"
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
     backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
@@ -260,15 +259,15 @@
   name: Purple Paper
   parent: Paper
   id: PaperPurple
-  description: 'Purple paper.'
+  description:  purple paper.'
   components:
   - type: Sprite
     layers:
     - state: paper
-      color: "#800080"
+      color: "#84597E"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#800080"
+      color: "#84597E"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -282,8 +281,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#800080"
-    contentImageModulate: "#800080"
+    backgroundModulate: "#84597E"
+    contentImageModulate: "#84597E"
 
 - type: entity
   name: Purple Office Paper
@@ -294,10 +293,10 @@
   - type: Sprite
     layers:
     - state: paper
-      color: "#800080"
+      color: "#84597E"
     - state: paper_words
       map: ["enum.PaperVisualLayers.Writing"]
-      color: "#800080"
+      color: "#84597E"
       visible: false
     - state: paper_stamp-generic
       map: ["enum.PaperVisualLayers.Stamp"]
@@ -311,8 +310,8 @@
     - Paper
   - type: FaxableObject
   - type: PaperVisuals
-    backgroundModulate: "#800080"
-    contentImageModulate: "#800080"
+    backgroundModulate: "#84597E"
+    contentImageModulate: "#84597E"
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
     backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
@@ -323,418 +322,7 @@
   name: Blue Paper
   parent: Paper
   id: PaperBlue
-  description: 'Blue paper.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#00008B"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#00008B"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#00008B"
-    contentImageModulate: "#00008B"
-
-
-- type: entity
-  name: Brown Paper
-  parent: Paper
-  id: PaperBrown
-  description: 'Brown paper.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#964B00"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#964B00"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#964B00"
-    contentImageModulate: "#964B00"
-
-- type: entity
-  name: Brown Office Paper
-  parent: Paper
-  id: OfficePaperBrown
-  description: 'A single unit of brown bureaucracy.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#964B00"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#964B00"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#964B00"
-    contentImageModulate: "#964B00"
-    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
-    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
-    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-    contentMargin: 16.0, 16.0, 16.0, 16.0
-
-# more desaturated colurs below
-
-- type: entity
-  name: Plain Orange Paper
-  parent: Paper
-  id: PaperPlainOrange
-  description: 'Plain orange paper.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#FFB162"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#FFB162"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#FFB162"
-    contentImageModulate: "#FFB162"
-
-- type: entity
-  name: Plain Orange Office Paper
-  parent: Paper
-  id: OfficePaperPlainOrange
-  description: 'A single unit of plain orange bureaucracy.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#FFB162"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#FFB162"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#FFB162"
-    contentImageModulate: "#FFB162"
-    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
-    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
-    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-    contentMargin: 16.0, 16.0, 16.0, 16.0
-
-
-- type: entity
-  name: Plain Yellow Paper
-  parent: Paper
-  id: PaperPlainYellow
-  description: 'Plain yellow paper.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#FFF275"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#FFF275"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#FFF275"
-    contentImageModulate: "#FFF275"
-
-
-- type: entity
-  name: Plain Yellow Office Paper
-  parent: Paper
-  id: OfficePaperPlainYellow
-  description: 'A single unit of plain yellow bureaucracy.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#FFF275"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#FFF275"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#FFF275"
-    contentImageModulate: "#FFF275"
-    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
-    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
-    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-    contentMargin: 16.0, 16.0, 16.0, 16.0
-
-
-- type: entity
-  name: Plain Green Paper
-  parent: Paper
-  id: PaperPlainGreen
-  description: 'Plain green paper.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#7E8C54"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#7E8C54"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#7E8C54"
-    contentImageModulate: "#7E8C54"
-
-
-- type: entity
-  name: Plain Green Office Paper
-  parent: Paper
-  id: OfficePaperPlainGreen
-  description: 'A single unit of plain green bureaucracy.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#7E8C54"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#7E8C54"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#7E8C54"
-    contentImageModulate: "#7E8C54"
-    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
-    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
-    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-    contentMargin: 16.0, 16.0, 16.0, 16.0
-
-
-- type: entity
-  name: Plain Red Paper
-  parent: Paper
-  id: PaperPlainRed
-  description: 'Plain red paper.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#D3494E"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#D3494E"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#D3494E"
-    contentImageModulate: "#D3494E"
-
-- type: entity
-  name: Plain Red Office Paper
-  parent: Paper
-  id: OfficePaperPlainRed
-  description: 'A single unit of plain red bureaucracy.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#D3494E"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#D3494E"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#D3494E"
-    contentImageModulate: "#D3494E"
-    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
-    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
-    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-    contentMargin: 16.0, 16.0, 16.0, 16.0
-
-
-- type: entity
-  name: Plain Purple Paper
-  parent: Paper
-  id: PaperPlainPurple
-  description: 'Plain purple paper.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#84597E"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#84597E"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#84597E"
-    contentImageModulate: "#84597E"
-
-- type: entity
-  name: Plain Purple Office Paper
-  parent: Paper
-  id: OfficePaperPlainPurple
-  description: 'A single unit of plain purple bureaucracy.'
-  components:
-  - type: Sprite
-    layers:
-    - state: paper
-      color: "#84597E"
-    - state: paper_words
-      map: ["enum.PaperVisualLayers.Writing"]
-      color: "#84597E"
-      visible: false
-    - state: paper_stamp-generic
-      map: ["enum.PaperVisualLayers.Stamp"]
-      visible: false
-  - type: PaperLabelType
-    paperType: Invoice
-  - type: Tag
-    tags:
-    - Document
-    - Trash
-    - Paper
-  - type: FaxableObject
-  - type: PaperVisuals
-    backgroundModulate: "#84597E"
-    contentImageModulate: "#84597E"
-    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
-    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
-    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-    contentMargin: 16.0, 16.0, 16.0, 16.0
-
-
-- type: entity
-  name: Plain Blue Paper
-  parent: Paper
-  id: PaperPlainBlue
-  description: 'Plain blue paper.'
+  description:  blue paper.'
   components:
   - type: Sprite
     layers:
@@ -759,12 +347,45 @@
     backgroundModulate: "#202040"
     contentImageModulate: "#202040"
 
+- type: entity
+  name: Blue Office Paper
+  parent: Paper
+  id: OfficePaperBlue
+  description: 'A single unit of blue bureaucracy.'
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+      color: "#202040"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#202040"
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
+  - type: PaperLabelType
+    paperType: Invoice
+  - type: Tag
+    tags:
+    - Document
+    - Trash
+    - Paper
+  - type: FaxableObject
+  - type: PaperVisuals
+    backgroundModulate: "#202040"
+    contentImageModulate: "#202040"
+    backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
+    contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
+    backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+    contentMargin: 16.0, 16.0, 16.0, 16.0
+
 
 - type: entity
-  name: Plain Brown Paper
+  name: Brown Paper
   parent: Paper
-  id: PaperPlainBrown
-  description: 'Plain Brown paper.'
+  id: PaperBrown
+  description:  Brown paper.'
   components:
   - type: Sprite
     layers:
@@ -790,10 +411,10 @@
     contentImageModulate: "#836953"
 
 - type: entity
-  name: Plain Brown Office Paper
+  name: Brown Office Paper
   parent: Paper
-  id: OfficePaperPlainBrown
-  description: 'A single unit of plain brown bureaucracy.'
+  id: OfficePaperBrown
+  description: 'A single unit of brown bureaucracy.'
   components:
   - type: Sprite
     layers:
