@@ -5,7 +5,7 @@
   name: Orange Paper
   parent: Paper
   id: PaperOrange
-  description: orange paper.'
+  description: 'orange paper.'
   components:
   - type: Sprite
     layers:
@@ -68,7 +68,7 @@
   name: Yellow Paper
   parent: Paper
   id: PaperYellow
-  description:  yellow paper.'
+  description:  'yellow paper.'
   components:
   - type: Sprite
     layers:
@@ -132,7 +132,7 @@
   name: Green Paper
   parent: Paper
   id: PaperGreen
-  description:  green paper.'
+  description:  'green paper.'
   components:
   - type: Sprite
     layers:
@@ -196,7 +196,7 @@
   name: Red Paper
   parent: Paper
   id: PaperRed
-  description:  red paper.'
+  description:  'red paper.'
   components:
   - type: Sprite
     layers:
@@ -259,7 +259,7 @@
   name: Purple Paper
   parent: Paper
   id: PaperPurple
-  description:  purple paper.'
+  description:  'purple paper.'
   components:
   - type: Sprite
     layers:
@@ -322,7 +322,7 @@
   name: Blue Paper
   parent: Paper
   id: PaperBlue
-  description:  blue paper.'
+  description:  'blue paper.'
   components:
   - type: Sprite
     layers:
@@ -385,7 +385,7 @@
   name: Brown Paper
   parent: Paper
   id: PaperBrown
-  description:  Brown paper.'
+  description:  'Brown paper.'
   components:
   - type: Sprite
     layers:
