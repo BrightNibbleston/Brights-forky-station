@@ -15,7 +15,7 @@
   - Glasses
   - SurvivalMedical
   - Trinkets
-#  - ChiefMedicalOfficerJobTrinkets
+  - ChiefMedicalOfficerJobTrinkets # Funky uncommented
   - GroupSpeciesBreathToolMedical
   - GroupBreathToolDecapoid # MACRO: Decapoid
 

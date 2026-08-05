@@ -9,7 +9,7 @@
   - Pager
   - Survival
   - Trinkets
-  #- CaptainJobTrinkets
+  - CaptainJobTrinkets # Funky uncommented
   - GroupSpeciesBreathTool
   - GroupBreathToolDecapoid # MACRO: Decapoid
 
@@ -26,7 +26,7 @@
   - Glasses
   - Survival
   - Trinkets
-  #- HoPJobTrinkets
+  - HoPJobTrinkets # Funky uncommented
   - GroupSpeciesBreathTool
   - GroupBreathToolDecapoid # MACRO: Decapoid
 
@@ -257,7 +257,7 @@
   - Glasses
   - Survival
   - Trinkets
-  #- QuartermasterJobTrinkets
+  - QuartermasterJobTrinkets # Funky uncommented
   - GroupSpeciesBreathTool
   - GroupBreathToolDecapoid # MACRO: Decapoid
 
@@ -308,7 +308,7 @@
   - Pager
   - SurvivalExtended
   - Trinkets
-  #- ChiefEngineerJobTrinkets
+  - ChiefEngineerJobTrinkets
   - GroupSpeciesBreathTool
   - GroupBreathToolDecapoid # MACRO: Decapoid
 
@@ -374,7 +374,7 @@
   - Glasses
   - Survival
   - Trinkets
-  #- ResearchDirectorJobTrinkets
+  - ResearchDirectorJobTrinkets # Funky uncommented
   - GroupSpeciesBreathTool
   - GroupBreathToolDecapoid # MACRO: Decapoid
 
