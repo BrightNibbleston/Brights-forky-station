@@ -155,6 +155,7 @@
     - id: ClothingHeadHelmetAtmosFire
     - id: GasAnalyzer
     - id: MedkitOxygenFilled
+    # - id: HoloFanProjecter   removed in funky-station
     - id: RPD
     - id: RCDAmmo
     - id: AirGrenade
@@ -266,6 +267,7 @@
   table: !type:AllSelector
     children:
     - id: BoxInflatable
+    # - id: HoloFanProjecter   removed in funky-station
     - id: MetalFoamGrenade
       amount: 3
     - id: AirGrenade

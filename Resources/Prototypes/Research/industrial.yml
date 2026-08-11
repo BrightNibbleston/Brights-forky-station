@@ -138,7 +138,7 @@
   id: AdvancedAtmospherics
   name: research-technology-advanced-atmospherics
   icon:
-    sprite: Structures/Piping/Atmospherics/Portable/portable_scrubber.rsi
+    sprite: Structures/Piping/Atmospherics/Portable/portable_scrubber.rsi # funky-station
     state: icon
   discipline: Industrial
   tier: 2
