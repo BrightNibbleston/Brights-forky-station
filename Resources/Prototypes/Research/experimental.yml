@@ -133,7 +133,7 @@
     - WeaponForceGun
     - WeaponTetherGun
 
-- type: technology
+- type: technology # funky-station
   id: HoloFanResearch
   name: research-technology-HoloFanResearch
   icon:
