@@ -146,6 +146,7 @@
   recipeUnlocks:
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
+  # - HolofanProjector    moved to holofan research in tier 2 experimental    funky-station
   - ElectrolyzerMachineCircuitboard # Funky atmos = /tg/ gases
   technologyPrerequisites:
   - AtmosphericTech
